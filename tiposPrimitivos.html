@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Tipos Primitivos do JavaScript</title>
+</head>
+
+<body>
+
+<h1>Tipos Primitivos do JavaScript</h1>
+
+<div id="resultado"></div>
+
+<script>
+
+
+ let javaScript = "JavaScript"
+// string
+let texto = `Olá, ${javaScript}!`;
+
+// number
+let numero = 42;
+
+// bigint
+let numeroGrande = 1234567890123456789012345678901234567890n;
+
+// boolean
+let verdadeiroOuFalso = true;
+
+// undefined
+let indefinido;
+
+// symbol
+let simbolo = Symbol("meuSimbolo");
+
+// null
+let nulo = null;
+
+let resultado = document.getElementById("resultado");
+
+resultado.innerHTML += "<p>String: " + texto + "</p>";
+resultado.innerHTML += "<p>Number: " + numero + "</p>";
+resultado.innerHTML += "<p>BigInt: " + numeroGrande + "</p>";
+resultado.innerHTML += "<p>Boolean: " + verdadeiroOuFalso + "</p>";
+resultado.innerHTML += "<p>Undefined: " + indefinido + "</p>";
+resultado.innerHTML += "<p>Symbol: " + simbolo.toString() + "</p>";
+resultado.innerHTML += "<p>Null: " + nulo + "</p>";
+
+// também no console
+console.log("String:", texto);
+console.log("Number:", numero);
+console.log("BigInt:", numeroGrande);
+console.log("Boolean:", verdadeiroOuFalso);
+console.log("Undefined:", indefinido);
+console.log("Symbol:", simbolo);
+console.log("Null:", nulo);
+
+</script>
+
+</body>
+</html>
