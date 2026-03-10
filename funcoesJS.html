@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let nome = "Lett Pereira"
+
+   // --------   FORMA CLASSICA (FUNCTION DECLARATION)
+
+        function saudar() {
+            return ` Olá Meu Nome é ${nome}`
+
+
+
+        }
+
+   //------ chamando a função
+
+
+   let mensagem = saudar("Ana");
+
+        console.log(mensagem); // Olá 
+        console.log(saudar("Carlos")); // hi carlos, okairi
+
+
+          // Função com multiplos Parametros
+
+          function calcularArea(largura,altura) {
+
+            let area = largura * altura;
+
+            return area;
+
+            console.log(calcularArea (5,3));
+            console.log(calcularArea(10,4));
+
+    
+        // --------  Arrow Function ( forma Moderna)
+
+        const dobrar = (numero) => numero * 2;
+        console.log(dobrar(7)); 
+
+        // Arrow Function com multiplas linhas 
+
+
+
+
+
+
+
+          }
+
+
+    </script>
+
+
+</body>
+</html>

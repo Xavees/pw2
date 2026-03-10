@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>         
+// -- ESCOPO GLOBAL VS LOCAL --
+
+let nome = "Global" // <- visivel em todo o codigo
+
+
+function minhaFuncao() {
+    let sobreNome = "Local" // essa variavel so existe nessa function
+    console.log(nome) // global
+    console.log(sobreNome) // local
+
+
+    minhaFuncao();
+    console.log(nome); // <- "Global"
+        console.log(sobrenome) // ERROR, essa variavel nao existe aqui
+
+
+
+
+
+}
+
+ // -- Escopo de bloco ( LET E CONST)
+
+ if (true) {
+    let dentrodoif = "só aqui ";
+    console.log(dentrodoif);
+
+
+
+
+ }
+ // console.log(dentrodoif); ERRO! fora do bloco
+
+
+
+
+
+    </script>
+</body>
+</html>
